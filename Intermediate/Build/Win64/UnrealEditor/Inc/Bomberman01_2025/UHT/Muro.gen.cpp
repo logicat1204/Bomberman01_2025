@@ -29,8 +29,14 @@ struct Z_Construct_UClass_AMuro_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Declaraci\xef\xbf\xbdn de la clase AMuro, que hereda de AActor.\n" },
+#endif
 		{ "IncludePath", "Muro.h" },
 		{ "ModuleRelativePath", "Muro.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Declaraci\xef\xbf\xbdn de la clase AMuro, que hereda de AActor." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,10 +85,10 @@ AMuro::~AMuro() {}
 struct Z_CompiledInDeferFile_FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Muro_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMuro, AMuro::StaticClass, TEXT("AMuro"), &Z_Registration_Info_UClass_AMuro, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMuro), 4129840645U) },
+		{ Z_Construct_UClass_AMuro, AMuro::StaticClass, TEXT("AMuro"), &Z_Registration_Info_UClass_AMuro, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMuro), 927684427U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Muro_h_2244634452(TEXT("/Script/Bomberman01_2025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Muro_h_2092722220(TEXT("/Script/Bomberman01_2025"),
 	Z_CompiledInDeferFile_FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Muro_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Muro_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

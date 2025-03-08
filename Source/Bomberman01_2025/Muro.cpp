@@ -1,59 +1,67 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Muro.h" // Incluye el archivo de encabezado de la clase AMuro.
+#include "Components/StaticMeshComponent.h" // Incluye la clase UStaticMeshComponent.
 
-#include "Muro.h"
-#include "Components/StaticMeshComponent.h"
-
-// Sets default values
+// Constructor de la clase AMuro.
 AMuro::AMuro()
 {
-	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Indica que este actor debe llamar a la función Tick() en cada fotograma.
+	// Puedes desactivarlo si no necesitas actualizaciones por fotograma.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// Crea un componente de malla estática y lo asigna a MallaMuro.
 	MallaMuro = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MallaMuro"));
-	//RootComponent = MeshComp;
-	MallaMuro->SetupAttachment(RootComponent);
+	// Asigna la malla como componente raíz del actor.
+	// RootComponent = MallaMuro; // (Comentado) Esto haría que MallaMuro sea el componente raíz.
+	MallaMuro->SetupAttachment(RootComponent); // En su lugar, lo adjunta al componente raíz.
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ObjetoMallaMuro(TEXT("/Script/Engine.StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
+	// Busca un archivo de malla estática en el contenido del proyecto.
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ObjetoMallaMuro(
+		TEXT("/Script/Engine.StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'")
+	);
 
+	// Si se encuentra la malla, la asigna al componente MallaMuro.
 	if (ObjetoMallaMuro.Succeeded())
 	{
-		MallaMuro->SetStaticMesh(ObjetoMallaMuro.Object);
-
-		MallaMuro->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+		MallaMuro->SetStaticMesh(ObjetoMallaMuro.Object); // Asigna la malla.
+		MallaMuro->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f)); // Establece la posición inicial.
 	}
 
-	FloatSpeed = 5.0f;
-	RotationSpeed = 3.0f;
-
-	mPuedeMoverse = FMath::RandBool();
+	// Inicializa las variables de velocidad y movimiento.
+	FloatSpeed = 5.0f; // Velocidad de flotación.
+	RotationSpeed = 3.0f; // Velocidad de rotación.
+	mPuedeMoverse = FMath::RandBool(); // Decide aleatoriamente si el muro puede moverse.
 }
 
-// Called when the game starts or when spawned
+// Llamado cuando el juego comienza o cuando el actor es creado.
 void AMuro::BeginPlay()
 {
-	Super::BeginPlay();
-
+	Super::BeginPlay(); // Llama a la implementación base de BeginPlay().
 }
 
-// Called every frame
+// Llamado en cada fotograma.
 void AMuro::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
+	Super::Tick(DeltaTime); // Llama a la implementación base de Tick().
+
+	// Si el muro puede moverse, realiza las actualizaciones de posición y rotación.
 	if (mPuedeMoverse)
 	{
+		// Obtiene la ubicación y rotación actual del actor.
 		FVector NewLocation = GetActorLocation();
 		FRotator NewRotation = GetActorRotation();
-		float RunningTime = GetGameTimeSinceCreation();
+		float RunningTime = GetGameTimeSinceCreation(); // Tiempo transcurrido desde la creación del actor.
 
-		// Aleatoriedad en el desplazamiento en Z
+		// Calcula un desplazamiento aleatorio en el eje Z.
 		float DeltaHeight = FMath::FRandRange(-1.0f, 1.0f) * FloatSpeed;
 		NewLocation.Z += DeltaHeight;
 
-		// Aleatoriedad en la rotación
+		// Calcula una rotación aleatoria en el eje Yaw (eje Z).
 		float DeltaRotation = FMath::FRandRange(-1.0f, 1.0f) * RotationSpeed;
 		NewRotation.Yaw += DeltaRotation;
 
+		// Aplica la nueva ubicación y rotación al actor.
 		SetActorLocationAndRotation(NewLocation, NewRotation);
 	}
 }
