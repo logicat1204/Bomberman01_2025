@@ -5,7 +5,16 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/StarterContent/Architecture/Floor_400x400.uasset"
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/P3/O43ETCZTFMLWWH1CJ941H2.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/7/9W/N18WQ443AMJLHN3FKZHKM9.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/2/26/64OLU8G9GAX3E3LMHI0OU6.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/9Y/ZXVZXUA08A61E3I9IG735V.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/IO/07IVU4EY14FMETPGTJULEO.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/2J/AQ1PWWT9TBAI7AA470T014.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/0G/HOAJZN9E4DDI6Y1W3JU13K.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/6I/RU1L28PS820IOVH625A0DA.uasset",
+				"C:/Users/HP VICTUS CORE i5/Documents/Unreal Projects/Bomberman01_2025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/NC/UUYHDUFQAXTRRN4RVOPIUF.uasset"
 			]
 		}
 	]

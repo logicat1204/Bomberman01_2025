@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BOMBERMAN01_2025_Bloque_generated_h
 
-#define FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABloque(); \
 	friend struct Z_Construct_UClass_ABloque_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ABloque)
 
 
-#define FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ABloque(ABloque&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~ABloque();
 
 
-#define FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_9_PROLOG
-#define FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_12_GENERATED_BODY \
+#define FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_11_PROLOG
+#define FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_14_INCLASS_NO_PURE_DECLS \
+	FID_Users_HP_VICTUS_CORE_i5_Documents_Unreal_Projects_Bomberman01_2025_Source_Bomberman01_2025_Bloque_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

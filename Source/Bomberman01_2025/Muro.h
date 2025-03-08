@@ -6,25 +6,28 @@
 #include "GameFramework/Actor.h"
 #include "Muro.generated.h"
 
+class UStaticMeshComponent;
+
 UCLASS()
 class BOMBERMAN01_2025_API AMuro : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AMuro();
 
-	UPROPERTY()
-	UStaticMeshComponent* Mesh;
-
+	UStaticMeshComponent* MallaMuro;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	float FloatSpeed;
+	float RotationSpeed;
+	bool mPuedeMoverse;
 };

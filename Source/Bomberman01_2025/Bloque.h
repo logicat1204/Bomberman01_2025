@@ -9,7 +9,7 @@
 class UStaticMeshComponent;
 
 UCLASS()
-class BOMBERMAN_012025_API ABloque : public AActor
+class BOMBERMAN01_2025_API ABloque : public AActor
 {
 	GENERATED_BODY()
 

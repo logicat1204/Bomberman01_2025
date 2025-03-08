@@ -13,7 +13,7 @@ class ABomberman01_2025GameMode : public AGameModeBase
 
 public:
 	ABomberman01_2025GameMode();
+
+public:
+	virtual void BeginPlay() override;
 };
-
-
-
